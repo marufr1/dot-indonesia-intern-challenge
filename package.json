@@ -1,0 +1,39 @@
+{
+  "name": "dot-indonesia-intern-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:rollback": "npx sequelize-cli db:migrate:undo:all",
+    "test": "NODE_ENV=test npx jest --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marufr1/dot-indonesia-intern-challenge.git"
+  },
+  "keywords": [],
+  "author": "Maruf Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marufr1/dot-indonesia-intern-challenge/issues"
+  },
+  "homepage": "https://github.com/marufr1/dot-indonesia-intern-challenge#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1",
+    "supertest": "^6.2.4"
+  }
+}
